@@ -37,6 +37,7 @@ Namespace dxKB17175
         End Sub
 
         Private Sub simpleButton1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles simpleButton1.Click
+            'https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.ReportGeneration.ReportGenerator
             Dim report As New XtraReport1(If(checkEdit1.Checked, FillDatasetFromGrid(), nwindDataSet), gridView1)
             Dim designTool As New ReportDesignTool(report)
             designTool.ShowDesignerDialog()
